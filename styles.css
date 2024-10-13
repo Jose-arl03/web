@@ -1,0 +1,318 @@
+/* General */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+}
+
+/* Encabezado */
+header {
+    background-color: #333;
+    color: white;
+    padding: 10px 0; /* Mismo padding para todas las páginas */
+    text-align: center;
+}
+
+header h1 {
+    color: white; /* Asegura que el título sea blanco */
+}
+
+header nav ul {
+    display: flex;
+    justify-content: center;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+header nav ul li {
+    margin: 0 15px;
+}
+
+header nav ul li a {
+    color: white; /* Enlaces blancos */
+    font-weight: bold;
+    text-decoration: none;
+}
+
+header nav ul li a:hover {
+    color: #f0f0f0; /* Color más claro al pasar el cursor */
+}
+
+/* Sección de productos destacados */
+#productos-destacados {
+    padding: 20px;
+    text-align: center;
+}
+
+.producto {
+    display: inline-block;
+    width: 200px;
+    margin: 15px;
+    background-color: #fff;
+    padding: 10px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+}
+
+.producto img {
+    width: 100%;
+    height: auto;
+}
+
+/* Sección de catálogo de productos */
+#catalogo-productos {
+    padding: 20px;
+    text-align: center;
+}
+
+#catalogo-productos .producto {
+    display: inline-block;
+    width: 200px;
+    margin: 15px;
+    background-color: #fff;
+    padding: 10px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+}
+
+#catalogo-productos .producto img {
+    width: 100%;
+    height: auto;
+}
+
+#catalogo-productos .producto h3 {
+    font-size: 1.2em;
+}
+
+#catalogo-productos .producto p {
+    font-size: 0.9em;
+    color: #555;
+}
+
+#catalogo-productos .producto a {
+    display: inline-block;
+    margin-top: 10px;
+    color: #007BFF;
+    text-decoration: none;
+}
+
+#catalogo-productos .producto a:hover {
+    text-decoration: underline;
+}
+
+/* Detalle del producto */
+.contenedor {
+    max-width: 1200px;
+    margin: 20px auto;
+    padding: 0 20px;
+}
+
+.producto-detalle {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
+    background-color: white;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.imagenes-producto img {
+    max-width: 300px;
+    border-radius: 10px;
+    margin: 10px;
+}
+
+.descripcion-producto {
+    max-width: 600px;
+}
+
+.descripcion-producto p {
+    line-height: 1.6;
+    margin-bottom: 15px;
+}
+
+.descripcion-producto ul li {
+    margin-bottom: 5px;
+}
+
+.btn-comprar {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #28a745;
+    color: white;
+    font-size: 16px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.btn-comprar:hover {
+    background-color: #218838;
+}
+
+/* Sección de productos recomendados */
+#productos-recomendados {
+    padding: 50px;
+    text-align: center;
+}
+
+.productos-recomendados-lista {
+    display: flex; /* Utiliza flexbox para alinear horizontalmente */
+    justify-content: center; /* Centra los productos */
+    flex-wrap: wrap; /* Permite que los elementos se muevan a la siguiente línea si no hay espacio */
+}
+
+.producto-recomendado {
+    display: inline-block;
+    width: 200px; /* Ajusta según tus necesidades */
+    margin: 15px; /* Espacio entre productos */
+    background-color: #fff;
+    padding: 10px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+}
+
+.producto-recomendado img {
+    width: 100%;
+    height: auto;
+}
+
+/* Pie de página */
+footer {
+    text-align: center;
+    padding: 5px;
+    background-color: #333;
+    color: white;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+}
+
+
+
+
+
+
+#info-tienda {
+    background-color: #4e4d4d1b; /* Fondo oscuro para resaltar el contenedor */
+    color: rgb(0, 0, 0); /* Texto blanco para mejor legibilidad */
+    padding: 40px;
+    text-align: center;
+    margin-bottom: 20px;
+    border: 3px solid rgba(79, 79, 79, 0.472); /* Contorno blanco */
+    border-radius: 10px; /* Bordes redondeados para un mejor diseño */
+}
+
+#info-tienda h2 {
+    font-size: 28px;
+    margin-bottom: 15px;
+    color: #121212; /* Un color diferente para el título */
+}
+
+#info-tienda p {
+    font-size: 16px;
+    line-height: 1.6;
+    margin-bottom: 10px;
+}
+
+#info-tienda a {
+    color: #1f128f; /* Color del enlace para que destaque */
+    text-decoration: none;
+}
+
+#info-tienda a:hover {
+    text-decoration: underline;
+}
+
+
+/*   LOGIN*\/*   LOGIN*\
+/* Estilos para el contenedor grande de login */
+.login-container {
+    display: flex;
+    max-width: 1600px;
+    height: 800px;
+    margin: 100px auto;
+    border-radius: 20px;
+    overflow: hidden;
+
+}
+
+.login-image {
+    flex: .90;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #f4f4f4;
+}
+
+.login-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.login-form {
+    flex: .25;
+    background-color: #333; /* Fondo oscuro para el formulario */
+    padding: 40px;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+
+.input-group {
+    margin-bottom: 20px;
+}
+
+.input-group label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+}
+
+
+
+
+.input-group input {
+
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    background-color: #f4f4f4; /* Fondo claro para los inputs */
+    color: #333;
+    font-size: 16px;
+    box-shadow: inset 0 1px 3px rgba(0, 0, 0, 0.1);
+}
+
+.input-group input:focus {
+    outline: none;
+    background-color: #e9e9e9;
+}
+
+.remember-me {
+    text-align: left;
+    margin-bottom: 20px;
+}
+
+.remember-me input {
+    margin-right: 10px;
+}
+
+
+.btn-login {
+
+    padding: 15px;
+    background-color: #28a745;
+    color: white;
+    font-size: 18px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.login-form p {
+    margin-top: 15px;
+}
